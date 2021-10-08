@@ -26,9 +26,10 @@ int main()
   {
     auto t0 = std::chrono::high_resolution_clock::now();
     // sum all the elements of the vector with std::accumulate
+    int sum = std::accumulate(v.begin(), v.end(), 0, [](int &a, int &b) { return a + b; });
     auto t1 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<float> d = t1 - t0;
-    std::cout << " in " << d.count() << " s\n";
+    std::cout << " in " << d.count() << " s  sum(" + std::to_string(sum) + ")\n";
   }
 
   {

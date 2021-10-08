@@ -1,0 +1,4 @@
+hpc-200-06-18 slots=2
+hpc-200-06-17 slots=2
+hpc-200-06-05 slots=2
+hpc-200-06-06 slots=2
